@@ -12,6 +12,9 @@ export class HomeComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    this.activatedRoute.params.subscribe((sss) => {
+      this.data = sss;
+    });
 
   }
 
